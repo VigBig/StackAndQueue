@@ -80,4 +80,10 @@ public class LinkedList<E> {
         top = top.next;
 
     }
+
+    public void dequeue() {
+
+        front = front.next;
+
+    }
 }

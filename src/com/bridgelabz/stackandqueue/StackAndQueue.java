@@ -32,7 +32,7 @@ public class StackAndQueue {
         System.out.println("Printing elements of Stack : ");
         linkedList.displayStack();
 
-        System.out.println("UC3: Enqueueing elements 70,30,56 into Queue : ");
+        System.out.println("UC3: Enqueueing elements 56,30,70 into Queue : ");
         LinkedList<Integer> linkedList2 = new LinkedList<>();
         linkedList2.enqueue(56);
         linkedList2.enqueue(30);
@@ -40,5 +40,18 @@ public class StackAndQueue {
         System.out.println("Printing elements of Queue : ");
         linkedList2.displayQueue();
 
+        System.out.println("UC4: Dequeueing elements of Queue : ");
+        System.out.println("Dequeueing front of queue... ");
+        linkedList2.dequeue();
+        System.out.println("Printing elements of Queue : ");
+        linkedList2.displayQueue();
+        System.out.println("Dequeueing front of queue... ");
+        linkedList2.dequeue();
+        System.out.println("Printing elements of Queue : ");
+        linkedList2.displayQueue();
+        System.out.println("Dequeueing front of queue... ");
+        linkedList2.dequeue();
+        System.out.println("Printing elements of Queue : ");
+        linkedList2.displayQueue();
     }
 }
