@@ -25,6 +25,10 @@ public class LinkedList<E> {
 
         Node<E> temp = top;
 
+        if(top==null){
+            System.out.println("Stack is empty");
+        }
+
         while(temp!=null){
             System.out.println(" "+ temp.key);
             temp = temp.next;
@@ -37,4 +41,13 @@ public class LinkedList<E> {
         System.out.println();
     }
 
+    public void peek() {
+        System.out.println(top.key);
+    }
+
+    public void pop() {
+
+        top = top.next;
+
+    }
 }
